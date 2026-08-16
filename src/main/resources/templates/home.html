@@ -12,6 +12,9 @@
 			<a class="navbar-brand" th:href="@{/}">Course Log</a>
 			<div class="navbar-nav">
 				<a class="nav-link" th:href="@{/students}">Students</a>
+				<a class="nav-link" th:href="@{/teachers}">Teachers</a>
+				<a class="nav-link" th:href="@{/courses}">Courses</a>
+				<a class="nav-link" th:href="@{/grades}">Grades</a>
 			</div>
 		</div>
 	</nav>
@@ -34,6 +37,51 @@
 							<span class="badge text-bg-primary" th:text="${studentCount}">0</span>
 						</div>
 						<a class="btn btn-primary" th:href="@{/students}">View Students</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card shadow-sm h-100">
+					<div class="card-body">
+						<div class="d-flex justify-content-between align-items-start mb-3">
+							<div>
+								<h2 class="h5 mb-1">Teacher Database</h2>
+								<p class="text-muted mb-0">View and manage teacher records.</p>
+							</div>
+							<span class="badge text-bg-primary" th:text="${teacherCount}">0</span>
+						</div>
+						<a class="btn btn-primary" th:href="@{/teachers}">View Teachers</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card shadow-sm h-100">
+					<div class="card-body">
+						<div class="d-flex justify-content-between align-items-start mb-3">
+							<div>
+								<h2 class="h5 mb-1">Course Database</h2>
+								<p class="text-muted mb-0">View and manage course records.</p>
+							</div>
+							<span class="badge text-bg-primary" th:text="${courseCount}">0</span>
+						</div>
+						<a class="btn btn-primary" th:href="@{/courses}">View Courses</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="card shadow-sm h-100">
+					<div class="card-body">
+						<div class="d-flex justify-content-between align-items-start mb-3">
+							<div>
+								<h2 class="h5 mb-1">Grade Database</h2>
+								<p class="text-muted mb-0">View and manage overall course grades.</p>
+							</div>
+							<span class="badge text-bg-primary" th:text="${gradeCount}">0</span>
+						</div>
+						<a class="btn btn-primary" th:href="@{/grades}">View Grades</a>
 					</div>
 				</div>
 			</div>
